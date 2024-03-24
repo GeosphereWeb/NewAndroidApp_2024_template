@@ -1,4 +1,4 @@
-package de.geosphere.newandroidapp_2024.ui.theme
+package de.geosphere.newandroidapp2024.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

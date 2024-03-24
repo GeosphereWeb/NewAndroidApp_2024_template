@@ -1,8 +1,7 @@
-package de.geosphere.newandroidapp_2024
-
-import org.junit.Test
+package de.geosphere.newandroidapp2024
 
 import org.junit.Assert.*
+import org.junit.Test
 
 /**
  * Example local unit test, which will execute on the development machine (host).

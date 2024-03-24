@@ -1,14 +1,15 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.jetbrainsKotlinAndroid)
+    id("org.jlleitschuh.gradle.ktlint") version "12.1.0"
 }
 
 android {
-    namespace = "de.geosphere.newandroidapp_2024"
+    namespace = "de.geosphere.newandroidapp2024"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "de.geosphere.newandroidapp_2024"
+        applicationId = "de.geosphere.newandroidapp2024"
         minSdk = 34
         targetSdk = 34
         versionCode = 1
@@ -25,7 +26,7 @@ android {
             isMinifyEnabled = false
             proguardFiles(
                 getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
+                "proguard-rules.pro",
             )
         }
     }
@@ -66,4 +67,6 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    ktlintRuleset("com.twitter.compose.rules:ktlint:0.0.26")
 }

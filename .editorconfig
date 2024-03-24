@@ -1,0 +1,7 @@
+[*.{kt,kts}]
+twitter_compose_content_emitters = MyComposable,MyOtherComposable
+twitter_compose_allowed_composition_locals = LocalSomething,LocalSomethingElse
+twitter_compose_preview_public_only_if_params = false
+twitter_compose_allowed_composable_function_names = .*Presenter,.*SomethingElse
+
+# ktlint:standard:function-naming
