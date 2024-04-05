@@ -5,12 +5,11 @@ plugins {
     alias(libs.plugins.androidApplication) apply false
     alias(libs.plugins.jetbrainsKotlinAndroid) apply false
     alias(libs.plugins.detekt)
-    id("org.jlleitschuh.gradle.ktlint") version "12.1.0"
 }
 
 detekt {
-//    toolVersion = "1.23.3"
-    config.setFrom(file("config/detekt/detekt.yml"))
+    toolVersion = libs.versions.detekt.get()
+    config.setFrom(file("$projectDir/config/detekt/detekt.yml"))
     buildUponDefaultConfig = true
 }
 
@@ -25,6 +24,6 @@ tasks.withType<Detekt>().configureEach {
     }
 }
 
-// dependencies {
-//    detektPlugins("io.gitlab.arturbosch.detekt:detekt-formatting:1.23.3")
-// }
+dependencies {
+    detektPlugins(libs.plugins.detekt.formatting)
+}
