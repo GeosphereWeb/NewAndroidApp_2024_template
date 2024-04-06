@@ -10,17 +10,17 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import de.geosphere.newandroidapp2024.ui.theme.NewAndroidApp_2024Theme
+import de.geosphere.newandroidapp2024.ui.theme.NewAndroidApp2024Theme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            NewAndroidApp_2024Theme {
+            NewAndroidApp2024Theme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background,
+                    color = MaterialTheme.colorScheme.background
                 ) {
                     Greeting("Android")
                 }
@@ -30,20 +30,17 @@ class MainActivity : ComponentActivity() {
 }
 
 @Composable
-fun Greeting(
-    name: String,
-    modifier: Modifier = Modifier,
-) {
+fun Greeting(name: String, modifier: Modifier = Modifier) {
     Text(
         text = "Hello $name!",
-        modifier = modifier,
+        modifier = modifier
     )
 }
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
-    NewAndroidApp_2024Theme {
+    NewAndroidApp2024Theme {
         Greeting("Android")
     }
 }

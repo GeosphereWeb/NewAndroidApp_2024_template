@@ -5,6 +5,7 @@ plugins {
     alias(libs.plugins.androidApplication) apply false
     alias(libs.plugins.jetbrainsKotlinAndroid) apply false
     alias(libs.plugins.detekt)
+    id("org.jlleitschuh.gradle.ktlint") version "12.1.0"
 }
 
 detekt {
@@ -26,4 +27,13 @@ tasks.withType<Detekt>().configureEach {
 
 dependencies {
     detektPlugins(libs.plugins.detekt.formatting)
+}
+
+subprojects {
+    apply(plugin = "org.jlleitschuh.gradle.ktlint") // Version should be inherited from parent
+
+    // Optionally configure plugin
+    configure<org.jlleitschuh.gradle.ktlint.KtlintExtension> {
+        debug.set(true)
+    }
 }
