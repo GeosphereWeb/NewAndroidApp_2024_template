@@ -4,7 +4,7 @@ on:
   push:
     branches: [ master ]
 
- jobs:
+jobs:
    detekt:
      runs-on: ubuntu-latest
 
@@ -16,4 +16,3 @@ on:
          uses: natiginfo/action-detekt-all@1.23.6
          with:
           args:  --config detekt.yml
-          
