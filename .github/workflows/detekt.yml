@@ -8,10 +8,10 @@ jobs:
   detekt:
     runs-on: ubuntu-latest
     steps:
-      - name: "checkout"
-        uses: actions/checkout@v2
-
-      - name: "detekt"
-        uses: natiginfo/action-detekt-all@1.23.6
+      - uses: actions/checkout@v2
+      - name: Setup detekt
+        uses: detekt/setup-detekt@v1
         with:
-          args:  --config ./detekt/detekt.yml
+          detekt-version: '1.23.6' # Ersetzen Sie dies durch die gewünschte Version von detekt
+      - name: Run detekt
+        run: detekt --config ./detekt/detekt.yml
