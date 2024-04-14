@@ -7,7 +7,6 @@ on:
 jobs:
   detekt:
     runs-on: ubuntu-latest
-
     steps:
       - name: "checkout"
         uses: actions/checkout@v2
@@ -15,4 +14,4 @@ jobs:
       - name: "detekt"
         uses: natiginfo/action-detekt-all@1.23.6
         with:
-          args:  --config detekt.yml
+          args:  --config detekt/detekt.yml
