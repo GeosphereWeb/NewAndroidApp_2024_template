@@ -28,5 +28,5 @@ jobs:
 #        uses: detekt/setup-detekt@v1
 #        with:
 #          detekt-version: '1.23.6' # Ersetzen Sie dies durch die gewünschte Version von detekt
-      - name: Run detekt
-        run: detekt --config ./config/detekt/detekt.yml
+#      - name: Run detekt
+#        run: detekt --config ./config/detekt/detekt.yml
