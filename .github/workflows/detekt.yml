@@ -4,29 +4,13 @@ on:
   push:
     branches: [ master ]
 
-jobs:
-  detekt:
-    runs-on: ubuntu-latest
+  jobs:
+    detekt:
+      runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout code
-      - uses: actions/checkout@v3
+      steps:
+        - name: "checkout"
+          uses: actions/checkout@v2
 
-      - name: Setup JSK
-        uses: actions/setup-java@v3
-        with:
-          distribution: oracle
-          java-version: '17'
-
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-
-      - name: Build and run detekt
-        run: ./gradlew detekt
-
-#      - name: Setup detekt
-#        uses: detekt/setup-detekt@v1
-#        with:
-#          detekt-version: '1.23.6' # Ersetzen Sie dies durch die gewünschte Version von detekt
-#      - name: Run detekt
-#        run: detekt --config ./config/detekt/detekt.yml
+        - name: "detekt"
+          uses: natiginfo/action-detekt-all@1.23.6
