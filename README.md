@@ -1,5 +1,5 @@
-[![detekt](https://github.com/GeosphereWeb/NewAndroidApp_2024_template/actions/workflows/detekt.yml/badge.svg?branch=master)](https://github.com/GeosphereWeb/NewAndroidApp_2024_template/actions/workflows/detekt.yml)
-[![ktlint](https://github.com/GeosphereWeb/NewAndroidApp_2024_template/actions/workflows/ktlint.yml/badge.svg)](https://github.com/GeosphereWeb/NewAndroidApp_2024_template/actions/workflows/ktlint.yml)
+[![Scan with Detekt](https://github.com/GeosphereWeb/NewAndroidApp_2024_template/actions/workflows/detekt.yml/badge.svg?branch=master)](https://github.com/GeosphereWeb/NewAndroidApp_2024_template/actions/workflows/detekt.yml)
+[![Scan with Ktlint](https://github.com/GeosphereWeb/NewAndroidApp_2024_template/actions/workflows/ktlint.yml/badge.svg)](https://github.com/GeosphereWeb/NewAndroidApp_2024_template/actions/workflows/ktlint.yml)
 
 # Project Name
 > Outline a brief description of your project.
