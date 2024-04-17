@@ -1,3 +1,6 @@
+[![detekt](https://github.com/GeosphereWeb/NewAndroidApp_2024_template/actions/workflows/detekt.yml/badge.svg?branch=master)](https://github.com/GeosphereWeb/NewAndroidApp_2024_template/actions/workflows/detekt.yml)
+[![ktlint](https://github.com/GeosphereWeb/NewAndroidApp_2024_template/actions/workflows/ktlint.yml/badge.svg)](https://github.com/GeosphereWeb/NewAndroidApp_2024_template/actions/workflows/ktlint.yml)
+
 # Project Name
 > Outline a brief description of your project.
 > Live demo [_here_](https://www.example.com). <!-- If you have the project hosted somewhere, include the link here. -->
